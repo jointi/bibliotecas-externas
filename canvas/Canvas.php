@@ -1,6 +1,6 @@
 <?php
 
-namespace Helpers;
+namespace Canvas;
 
 /**
  * Classe para manipulação de imagens utilizando a extensão GD
