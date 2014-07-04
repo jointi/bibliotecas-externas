@@ -1,5 +1,5 @@
 <?php
-$config_path = dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(getcwd()))))))))));
+$config_path = dirname(dirname(dirname(dirname(dirname(dirname(dirname(dirname(getcwd()))))))));
 session_start();
 
 /*
@@ -64,7 +64,7 @@ Examples:
 
 ATTENTION: The trailing slash is required.
 */
-$config  = include $config_path."/config/paths.php";;
+$config  = include $config_path."/config/paths.php";
 $baseUrl = "http://".$_SERVER['HTTP_HOST']."/".$config['upload_path']."/ckfinder/";
 
 
