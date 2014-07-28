@@ -139,19 +139,20 @@ Subfolders inherit their default settings from their parents' definitions.
 */
 
 $config['AccessControl'][] = Array(
-		'role' => '*',
-		'resourceType' => '*',
-		'folder' => '/',
+	'role' => '*',
+	'resourceType' => '*',
+	'folder' => '/',
 
-		'folderView' => true,
-		'folderCreate' => true,
-		'folderRename' => true,
-		'folderDelete' => true,
+	'folderView' => true,
+	'folderCreate' => false,
+	'folderRename' => false,
+	'folderDelete' => false,
 
-		'fileView' => true,
-		'fileUpload' => true,
-		'fileRename' => true,
-		'fileDelete' => true);
+	'fileView' => true,
+	'fileUpload' => false,
+	'fileRename' => false,
+	'fileDelete' => false,
+);
 
 /*
 For example, if you want to restrict the upload, rename or delete of files in
