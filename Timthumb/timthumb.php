@@ -149,7 +149,7 @@ if(! isset($ALLOWED_SITES)){
 
 //timthumb::start();
 
-class timthumb {
+class Timthumb {
 	protected $src = "";
 	protected $is404 = false;
 	protected $docRoot = "";
@@ -172,7 +172,7 @@ class timthumb {
 	protected static $curlDataWritten = 0;
 	protected static $curlFH = false;
 	public static function start(){
-		$tim = new timthumb();
+		$tim = new Timthumb();
 		$tim->handleErrors();
 		$tim->securityChecks();
 		if($tim->tryBrowserCache()){
