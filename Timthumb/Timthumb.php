@@ -13,6 +13,8 @@
  * $Rev$
  */
 
+namespace Timthumb;
+
 /*
  * --- TimThumb CONFIGURATION ---
  * To edit the configs it is best to create a file called timthumb-config.php
