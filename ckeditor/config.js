@@ -1,18 +1,17 @@
-﻿/*
-Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
-*/
+/**
+ * @license Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md or http://ckeditor.com/license
+ */
 
-CKEDITOR.editorConfig = function( config )
-{
-    var link = baseUrl();
+CKEDITOR.editorConfig = function( config ) {
+var link = baseUrl();
     config.filebrowserBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html',
     config.filebrowserImageBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html?type=Images',
     config.filebrowserFlashBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html?type=Flash',
     config.filebrowserUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Fil­es',
     config.filebrowserImageUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Ima­ges',
     config.filebrowserFlashUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
-	config.extraPlugins = 'youtube';
+	config.extraPlugins = 'youtube','justify';
         //config.extraPlugins = 'oembed';
 config.allowedContent = true;
 
@@ -27,12 +26,11 @@ config.allowedContent = true;
 		{ name: 'others' },
 		'/',
 		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
-		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align' ] },
+		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align'] },
 		{ name: 'colors' },
 		{ name: 'about' }
 	];
+        // Use the classes 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify'
+config.justifyClasses = [ 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify' ];
 
-	
 };
- 	
-
