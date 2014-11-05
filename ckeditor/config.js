@@ -11,9 +11,10 @@ var link = baseUrl();
     config.filebrowserUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Fil­es',
     config.filebrowserImageUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Ima­ges',
     config.filebrowserFlashUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
-	config.extraPlugins = 'youtube','justify';
+    config.filebrowserArquivosUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Arquivos',
+    config.extraPlugins = 'youtube','justify';
         //config.extraPlugins = 'oembed';
-config.allowedContent = true;
+    config.allowedContent = true;
 
  config.toolbarGroups = [
 		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
