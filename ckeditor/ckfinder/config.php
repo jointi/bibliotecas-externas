@@ -140,7 +140,7 @@ Subfolders inherit their default settings from their parents' definitions.
 
 $config['AccessControl'][] = Array(
 	'role' => '*',
-	'resourceType' => '*',
+	'resourceType' => 'Imagens',
 	'folder' => '/',
 
 	'folderView' => true,
@@ -152,6 +152,22 @@ $config['AccessControl'][] = Array(
 	'fileUpload' => false,
 	'fileRename' => false,
 	'fileDelete' => false,
+);
+
+$config['AccessControl']['Arquivos'] = Array(
+	'role' => '*',
+	'resourceType' => '*',
+	'folder' => '/',
+
+	'folderView' => true,
+	'folderCreate' => false,
+	'folderRename' => false,
+	'folderDelete' => false,
+
+	'fileView' => true,
+	'fileUpload' => true,
+	'fileRename' => true,
+	'fileDelete' => true,
 );
 
 /*
@@ -200,29 +216,37 @@ to upload `.swf` files only if you understand and can accept this risk.
 */
 $config['DefaultResourceTypes'] = '';
 
-$config['ResourceType'][] = Array(
-		'name' => 'Files',				// Single quotes not allowed
-		'url' => $baseUrl . 'files',
-		'directory' => $baseDir . 'files',
-		'maxSize' => 0,
-		'allowedExtensions' => '7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip',
-		'deniedExtensions' => '');
+//$config['ResourceType'][] = Array(
+//		'name' => 'Files',				// Single quotes not allowed
+//		'url' => $baseUrl . 'files',
+//		'directory' => $baseDir . 'files',
+//		'maxSize' => 0,
+//		'allowedExtensions' => '7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip',
+//		'deniedExtensions' => '');
 
 $config['ResourceType'][] = Array(
-		'name' => 'Images',
+		'name' => 'Imagens',
 		'url' => $baseUrl . 'images',
 		'directory' => $baseDir . 'images',
 		'maxSize' => 0,
 		'allowedExtensions' => 'bmp,gif,jpeg,jpg,png',
 		'deniedExtensions' => '');
 
+//$config['ResourceType'][] = Array(
+//		'name' => 'Flash',
+//		'url' => $baseUrl . 'flash',
+//		'directory' => $baseDir . 'flash',
+//		'maxSize' => 0,
+//		'allowedExtensions' => 'swf,flv',
+//		'deniedExtensions' => '');
+
 $config['ResourceType'][] = Array(
-		'name' => 'Flash',
-		'url' => $baseUrl . 'flash',
-		'directory' => $baseDir . 'flash',
+		'name' => 'Arquivos',
+		'url' => $baseUrl . 'arquivos',
+		'directory' => $baseDir . 'arquivos',
 		'maxSize' => 0,
-		'allowedExtensions' => 'swf,flv',
-		'deniedExtensions' => '');
+		'allowedExtensions' => '7z,aiff,asf,avi,bmp,csv,doc,docx,fla,flv,gif,gz,gzip,jpeg,jpg,mid,mov,mp3,mp4,mpc,mpeg,mpg,ods,odt,pdf,png,ppt,pptx,pxd,qt,ram,rar,rm,rmi,rmvb,rtf,sdc,sitd,swf,sxc,sxw,tar,tgz,tif,tiff,txt,vsd,wav,wma,wmv,xls,xlsx,zip',
+		'deniedExtensions' => 'exe,com');
 
 /*
  Due to security issues with Apache modules, it is recommended to leave the
