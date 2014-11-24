@@ -4,34 +4,34 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-var link = baseUrl();
+    var link = baseUrl();
+
     config.filebrowserBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html',
-    config.filebrowserImageBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html?type=Images',
+    config.filebrowserImageBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html?type=Imagens',
     config.filebrowserFlashBrowseUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/ckfinder.html?type=Flash',
-    config.filebrowserUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Fil­es',
-    config.filebrowserImageUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Ima­ges',
+    config.filebrowserUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Arquivos',
+    config.filebrowserImageUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Imagens',
     config.filebrowserFlashUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
-    config.filebrowserArquivosUploadUrl = link+'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Arquivos',
     config.extraPlugins = 'youtube','justify';
-        //config.extraPlugins = 'oembed';
     config.allowedContent = true;
+    // config.extraPlugins = 'oembed';
 
- config.toolbarGroups = [
-		{ name: 'clipboard',   groups: [ 'clipboard', 'undo' ] },
-		{ name: 'editing',     groups: [ 'find', 'selection', 'spellchecker' ] },
-		{ name: 'links' },
-		{ name: 'insert' },
-		{ name: 'forms' },
-		{ name: 'tools' },
-		{ name: 'document',	   groups: [ 'mode', 'document', 'doctools' ] },
-		{ name: 'others' },
-		'/',
-		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
-		{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align'] },
-		{ name: 'colors' },
-		{ name: 'about' }
-	];
-        // Use the classes 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify'
-config.justifyClasses = [ 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify' ];
+    config.toolbarGroups = [
+        { name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
+        { name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
+        { name: 'links' },
+        { name: 'insert' },
+        { name: 'forms' },
+        { name: 'tools' },
+        { name: 'document', groups: [ 'mode', 'document', 'doctools' ] },
+        { name: 'others' },
+        '/',
+        { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+        { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align'] },
+        { name: 'colors' },
+        { name: 'about' }
+    ];
 
+    // Use the classes 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify'
+    config.justifyClasses = [ 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify' ];
 };
