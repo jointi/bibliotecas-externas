@@ -154,9 +154,9 @@ $config['AccessControl'][] = Array(
 	'fileDelete' => false,
 );
 
-$config['AccessControl']['Arquivos'] = Array(
+$config['AccessControl'][] = Array(
 	'role' => '*',
-	'resourceType' => '*',
+	'resourceType' => 'Arquivos',
 	'folder' => '/',
 
 	'folderView' => true,
@@ -168,6 +168,22 @@ $config['AccessControl']['Arquivos'] = Array(
 	'fileUpload' => true,
 	'fileRename' => true,
 	'fileDelete' => true,
+);
+
+$config['AccessControl'][] = Array(
+	'role' => '*',
+	'resourceType' => 'Flash',
+	'folder' => '/',
+
+	'folderView' => true,
+	'folderCreate' => false,
+	'folderRename' => false,
+	'folderDelete' => false,
+
+	'fileView' => true,
+	'fileUpload' => false,
+	'fileRename' => false,
+	'fileDelete' => false,
 );
 
 /*
@@ -232,13 +248,13 @@ $config['ResourceType'][] = Array(
 		'allowedExtensions' => 'bmp,gif,jpeg,jpg,png',
 		'deniedExtensions' => '');
 
-//$config['ResourceType'][] = Array(
-//		'name' => 'Flash',
-//		'url' => $baseUrl . 'flash',
-//		'directory' => $baseDir . 'flash',
-//		'maxSize' => 0,
-//		'allowedExtensions' => 'swf,flv',
-//		'deniedExtensions' => '');
+$config['ResourceType'][] = Array(
+		'name' => 'Flash',
+		'url' => $baseUrl . 'flash',
+		'directory' => $baseDir . 'flash',
+		'maxSize' => 0,
+		'allowedExtensions' => 'swf,flv',
+		'deniedExtensions' => '');
 
 $config['ResourceType'][] = Array(
 		'name' => 'Arquivos',
@@ -356,7 +372,6 @@ For more complex configuration options visit our Developer's Guide
   http://docs.cksource.com/CKFinder_2.x/Developers_Guide/PHP
 */
 $config['XSendfile'] = false;
-
 
 include_once "plugins/imageresize/plugin.php";
 include_once "plugins/fileeditor/plugin.php";
