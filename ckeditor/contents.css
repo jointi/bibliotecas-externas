@@ -132,3 +132,19 @@ a > img {
 	border: none;
 	outline: 1px solid #0782C1;
 }
+
+p.AlignCenter{
+    text-align: center;
+}
+
+p.AlignLeft{
+    text-align: left;
+}
+
+p.AlignRight{
+    text-align: right;
+}
+
+p.AlignJustify{
+    text-align: justify;
+}
