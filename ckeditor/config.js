@@ -15,7 +15,7 @@ CKEDITOR.editorConfig = function (config) {
             config.filebrowserFlashUploadUrl = link + 'vendor/jointi/bibliotecas-externas/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
             config.extraPlugins = 'youtube', 'justify';
     config.allowedContent = true;
-    config.extraPlugins = 'timestamp';
+    config.extraPlugins = 'imagemcms';
 
     config.toolbar = [
         {name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source']},
@@ -29,7 +29,7 @@ CKEDITOR.editorConfig = function (config) {
         '/',
         {name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize']},
         {name: 'colors', items: ['TextColor', 'BGColor']},
-        {name: 'tools', items: ['Maximize', 'ShowBlocks', 'Timestamp']}
+        {name: 'tools', items: ['Maximize', 'InserirImagem']}
     ];
 
     // Use the classes 'AlignLeft', 'AlignCenter', 'AlignRight', 'AlignJustify'
