@@ -149,7 +149,7 @@ $config['AccessControl'][] = Array(
 	'folderDelete' => false,
 
 	'fileView' => true,
-	'fileUpload' => false,
+	'fileUpload' => true,
 	'fileRename' => false,
 	'fileDelete' => false,
 );
