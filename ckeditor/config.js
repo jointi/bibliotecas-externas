@@ -19,7 +19,7 @@ CKEDITOR.editorConfig = function (config) {
 
     config.toolbar = [
         {name: 'document', groups: ['mode', 'document', 'doctools'], items: ['Source']},
-        {name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+        {name: 'clipboard', groups: ['clipboard', 'undo'], items: ['Cut', 'Copy', 'Paste', '-', 'Undo', 'Redo']},
         {name: 'editing', groups: ['find', 'selection', 'spellchecker'], items: ['Find', 'Replace', '-', 'SelectAll']},
         '/',
         {name: 'basicstyles', groups: ['basicstyles', 'cleanup'], items: ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
@@ -27,8 +27,6 @@ CKEDITOR.editorConfig = function (config) {
         {name: 'links', items: ['Link', 'Unlink']},
         {name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Iframe']},
         '/',
-        {name: 'styles', items: ['Styles', 'Format', 'Font', 'FontSize']},
-        {name: 'colors', items: ['TextColor', 'BGColor']},
         {name: 'tools', items: ['Maximize', 'InserirImagem']}
     ];
 
