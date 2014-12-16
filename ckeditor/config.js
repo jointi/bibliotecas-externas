@@ -26,6 +26,7 @@ CKEDITOR.editorConfig = function (config) {
         {name: 'paragraph', groups: ['list', 'indent', 'blocks', 'align', 'bidi'], items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']},
         {name: 'links', items: ['Link', 'Unlink']},
         {name: 'insert', items: ['Image', 'Table', 'HorizontalRule', 'SpecialChar', 'Iframe']},
+        {name: 'colors', items: ['TextColor']},
         '/',
         {name: 'tools', items: ['Maximize', 'InserirImagem']}
     ];
