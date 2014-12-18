@@ -65,7 +65,12 @@ Examples:
 ATTENTION: The trailing slash is required.
 */
 $config  = include $config_path."/config/paths.php";
-$baseUrl = "http://".$_SERVER['HTTP_HOST']."/".$config['upload_path']."/ckfinder/";
+
+// URL absoluta
+//$baseUrl = "http://".$_SERVER['HTTP_HOST']."/".$config['upload_path']."/ckfinder/";
+
+// URL relativa
+$baseUrl = $config['upload_path']."/ckfinder/";
 
 
 /*
